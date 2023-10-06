@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Josefin+Sans:wght@200;300;400;500;600;700;800;900;1000&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Noto+Sans+Indic+Siyaq+Numbers&family=Outfit:wght@200;300;400;500;600;700;800;900;1000&family=Poppins&display=swap');
+body {
+  font-family: 'Outfit', Sans-Serif;
+}
+.judul {
+  background: linear-gradient(90deg, rgba(110, 50, 255, 1), rgba(180, 50, 255, 1));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 3rem;
+  font-weight: 700;
+  background-size: 200%;
+  animation: bg-animate 4s infinite alternate;
+  text-shadow: 0 0 10px rgba(110, 50, 255, .25);
+}
+.sub-judul {
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgba(170, 170, 170, 1);
+}
+.rules {
+  width: min(100%, 500px);
+  border: 1px solid rgba(160, 160, 160, .8);
+  border-radius: 10px;
+}
+.judul-rules {
+  border-bottom: 1px solid rgba(160, 160, 160, .8);
+  background-color: rgba(30, 30, 40, 1);
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 1.5rem;
+}
+.rules > ol > li {
+  font-size: 1rem;
+  color: rgba(170, 170, 170, 1);
+  text-align: start;
+  font-weight: 300;
+}
+.konfirmasi {
+  width: min(100%, 500px);
+  border-radius: 10px;
+}
+.input-group-text {
+  background-color: transparent;
+  border: none;
+}
+.input-group > p {
+  height: 100%;
+  color: rgba(170, 170, 170, 1);
+  font-size: 1rem;
+  font-weight: 300;
+}
+.cek {
+  accent-color: rgba(110, 50, 255, 1);
+}
+.konfirmasi > button {
+  background: linear-gradient(90deg, rgba(110, 50, 255, 1), rgba(180, 50, 255, 1));
+  background-size: 200%;
+  animation: bg-animate 4s infinite alternate;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: .3rem 3rem;
+  border: none;
+}
+.game {
+  width: min(100%, 500px);
+}
+.form-control {
+  background-color: rgba(110, 50, 255, .3);
+  border: 1px solid rgba(110, 50, 255, 1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form-control:active, .form-control:focus {
+  background-color: rgba(110, 50, 255, .5);
+  border: 1px solid rgba(110, 50, 255, 1);
+  box-shadow: 0 0 10px rgba(110, 50, 255, .5);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form-control:disabled {
+  background-color: rgba(110, 50, 255, .5);
+  border: 1px solid rgba(110, 50, 255, 1);
+  box-shadow: 0 0 10px rgba(110, 50, 255, .5);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.aktif {
+  background-color: rgba(255, 100, 60, .3);
+  border: 1px solid rgba(255, 100, 60, 1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.aktif:active, .aktif:focus {
+  background-color: rgba(255, 100, 60, .5);
+  border: 1px solid rgba(255, 100, 60, 1);
+  box-shadow: 0 0 10px rgba(255, 100, 60, .5);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form-control::placeholder {
+  color: white;
+  font-size: .9rem;
+  font-weight: 300;
+}
+.game > .mulaigame {
+  background: linear-gradient(90deg, rgba(110, 50, 255, 1), rgba(180, 50, 255, 1));
+  background-size: 200%;
+  animation: bg-animate 4s infinite alternate;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: .3rem 3rem;
+  border: none;
+}
+.game > .load {
+  background: linear-gradient(90deg, rgba(110, 50, 255, 1), rgba(180, 50, 255, 1));
+  background-size: 200%;
+  animation: bg-animate 4s infinite alternate;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: .3rem 3rem;
+  border: none;
+}
+.loading {
+  background: linear-gradient(90deg, rgba(110, 50, 255, 1), rgba(180, 50, 255, 1));
+  background-size: 200%;
+  animation: bg-animate 4s infinite alternate;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: .3rem 3rem;
+  border: none;
+}
+.timer {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.mselect {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+.form-select {
+  background-color: rgba(30, 30, 40, 1);
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  appearance: none;
+}
+.lselect {
+  width: 100%;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(170, 170, 170, 1);
+}
+.select {
+  appearance: none;
+  background-color: rgba(30, 30, 40, 1);
+  height: 2.5rem;
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+.select:active, .select:focus {
+  outline: none;
+}
+.garis-tengah {
+  height: .2rem;
+  border-radius: .2rem;
+  width: 50%;
+  background-color: white;
+  justify-self: center;
+}
+.submit {
+  background: linear-gradient(90deg, rgba(110, 50, 255, 1), rgba(180, 50, 255, 1));
+  background-size: 200%;
+  animation: bg-animate 4s infinite alternate;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: .3rem 3rem;
+  border: none;
+}
+@keyframes bg-animate {
+  from {
+    background-position: right;
+  }
+  to {
+    background-position: left;
+  }
+}
