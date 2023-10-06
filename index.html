@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:site_name" content="Bruteforce pin"/>
+    <meta property="og:title" content="Bruteforce PIN 8 digit"/>
+    <meta property="og:description" content="Develop By Ahmad Beni Rusli"/>
+    <meta property="og:image" content="https://abrazax56.github.io/wf-event/assets/og.png"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:url" content="https://abrazax56.github.io/wf-event/"/>
+    <meta name="theme-color" content="black"/>
+    <title>WF EVENT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="icon" href="assets/icon.png"/>
+  </head>
+  <body class="bg-black min-vh-100 min-vw-100 d-flex justify-content-center align-items-center p-2 flex-column">
+    <div class="container d-flex justify-content-center align-items-center text-center flex-column mt-3 mb-3">
+      <h1 class="judul">Bruteforce Pin</h1>
+      <p class="sub-judul mt-1">• simple game by ahmad beni rusli</p>
+      <div class="rules mt-1">
+        <h4 class="judul-rules text-white p-2">Rules</h4>
+        <ol type="1" class="text-white mt-1 d-flex justify-content-start align-items-start flex-column m-2">
+          <li class="mt-1">usahakan berdoa sebelum memulai game.</li>
+          <li class="mt-1">bermainlah dengan bersungguh-sungguh.</li>
+          <li class="mt-1">masukan nama kelompok dan nomor wa perwakilan di kolom yang sudah disediakan.</li>
+          <li class="mt-1">tekan tombol mulai lalu tebaklah 8 angka PIN di kolom yang disediakan.</li>
+          <li class="mt-1">tebaklah dengan yakin karena game ini tanpa clue.</li>
+          <li class="mt-1">tunggu hingga waktu selesai lalu kirim jawabanmu.</li>
+        </ol>
+      </div>
+      <div class="konfirmasi mt-2 d-flex flex-column justify-content-center align-items-center">
+        <div class="input-group mb-3">
+          <div class="input-group-text">
+            <input class="cek mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+          </div>
+          <p class="cekp mt-3">saya telah membaca semua rules dan siap untuk bermain.</p>
+        </div>
+        <button class="lanjut btn text-white">Lanjut</button>
+        <button class="load btn text-white d-none" type="button" disabled>
+           <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+           <span role="status">Loading...</span>
+        </button>
+      </div>
+      <form class="game d-none" name="submit-to-google-sheet">
+        <div class="namanya mb-3">
+          <label class="lselect nm form-label">Masukan nama kelompok</label>
+          <input type="text" class="namakel form-control" placeholder="exp: kelompok mawar" name="kelompok">
+        </div>
+        <div class="namanya mb-3">
+          <label class="lselect nw form-label">Masukan nomor WA perwakilan</label>
+          <input type="number" class="nowa form-control" placeholder="exp: 0882xxx" name="whatsapp">
+        </div>
+        <button class="mulaigame btn text-white mt-5" type="button">Mulai</button>
+        <button class="load btn text-white d-none mt-5" type="button" disabled>
+           <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+           <span role="status">Loading...</span>
+        </button>
+        <textarea class="nilainy d-none" name="nilai"></textarea>
+        <div class="timer mt-5 d-none"></div>
+        <div class="mb-3 mt-3">
+          <label class="perintah d-none lselect form-label">Klik kotak dibawah ini, pilih dari 1 - 9!</label>
+          <div class="mselect">
+            <select class="select" disabled="true">
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+            </select>
+            <select class="select" disabled="true">
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+            </select>
+            <select class="select" disabled="true">
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+            </select>
+            <select class="select" disabled="true">
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+            </select>
+            <div class="garis-tengah"></div>
+            <select class="select" disabled="true">
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+            </select>
+            <select class="select" disabled="true">
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+            </select>
+            <select class="select" disabled="true">
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+            </select>
+            <select class="select" disabled="true">
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn submit text-white mt-3 d-none">Kirim Jawaban</button>
+        <button class="loading btn text-white d-none mt-3" type="button" disabled>
+           <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+           <span role="status">Loading...</span>
+        </button>
+      </form>
+    </div>
+    <div class="container2 d-none justify-content-center align-items-center flex-column">
+      <h1 class="judul">Terimakasih</h1>
+      <p class="sub-judul mt-1 text-white">Sampai Jumpa Di Game Berikutnya.</p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
